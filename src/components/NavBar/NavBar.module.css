@@ -1,0 +1,13 @@
+.nav{
+    background-color: rgb(16, 130, 150);
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    
+}
+
+.boton{
+    border-radius: 10px;
+    background-color: rgb(23, 97, 194);
+    border-color: rgb(113, 114, 114);
+}
