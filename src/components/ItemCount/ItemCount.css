@@ -1,0 +1,19 @@
+.Controls{
+
+color: #433512;
+display: flex;
+justify-content: center;
+
+
+}
+
+.Number{
+    display: block;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.Button{
+    margin-left: 15;
+}

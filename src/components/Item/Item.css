@@ -1,0 +1,9 @@
+.CardItem {
+    background-color: #ECDDB6;
+    border: 1px solid;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+}

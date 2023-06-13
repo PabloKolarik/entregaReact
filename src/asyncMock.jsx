@@ -4,7 +4,7 @@ const products = [
         name: 'Flautita',
         price: 10,
         category: 'pan',
-        img:'',
+        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzRqL1KEiRmsTLCcGgmYDX1WDZ54raMgjPdw&usqp=CAU',
         stock: 50,
         description: 'Pan tostado'
     },
@@ -14,7 +14,7 @@ const products = [
         name: 'Croissant',
         price: 20,
         category: 'medialuna',
-        img:'',
+        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR24rdg5QPV6QZuiPiDeasp2OwRx7a_YRj_-A&usqp=CAU',
         stock: 60,
         description: 'Croissant'
     },
@@ -24,7 +24,7 @@ const products = [
         name: 'Oreo Gigante',
         price: 30,
         category: 'galleta',
-        img:'',
+        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3joec6uvGL0lQkHaMDOyEQx1Zp9lWSyIvfw&usqp=CAU',
         stock: 30,
         description: 'Galleta Oreo gigante'
     },
