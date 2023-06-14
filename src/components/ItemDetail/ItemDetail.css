@@ -1,4 +1,14 @@
+.ItemHeader{
+    font-family: 'Spirax', cursive;
+}
+
+.CardItem{
+    border: #7D2A0C 1px;
+    border-radius: 5px;
+}
+
 .Info{
-    background-color: blueviolet;
-    color: yellowgreen;
+    
+    color: #433512;
+    font-family: 'Spirax', cursive;
 }
