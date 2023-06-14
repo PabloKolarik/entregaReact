@@ -1,14 +1,15 @@
-.ItemHeader{
-    font-family: 'Spirax', cursive;
+.ItemHeader {
+  font-family: "Spirax", cursive;
 }
 
-.CardItem{
-    border: #7D2A0C 1px;
-    border-radius: 5px;
+.CardItem {
+  border-radius: 5px;
+  height: 400px;
+  padding: 20px;
+  width: 300px;
 }
 
-.Info{
-    
-    color: #433512;
-    font-family: 'Spirax', cursive;
+.Info {
+  color: #433512;
+  font-family: "Spirax", cursive;
 }
