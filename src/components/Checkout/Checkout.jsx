@@ -11,6 +11,7 @@ import {
     where,
     documentId,
 } from "firebase/firestore";
+import { Link } from 'react-router-dom'
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false)
@@ -90,8 +91,11 @@ const Checkout = () => {
     }
 
     if (orderId) {
-        return <h1 className="checkout__h1">El Id de su compra es: {orderId}</h1>;
+        return <h1 className="checkout__h1">El Id de su compra es: {orderId} </h1>;
+        
     }
+
+    
 
     return (
         <div>

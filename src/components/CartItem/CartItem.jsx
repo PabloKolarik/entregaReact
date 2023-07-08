@@ -1,16 +1,16 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
-import cart from '../CartWidget/assets/cart.svg'
 
-const CartItem = ({ id, title, price, quantity }) => {
+
+
+
+const CartItem = ({  price, quantity }) => {
     const { removeItem } = useContext(CartContext);
 
     return (
         <div className="carrito">
             <div id="carrito__productos" className="carrito__prod">
-                <div className="carrito__prod--titulo">
-                    <h3>{title}</h3>
-                </div>
+                
                 <div className="carrito__prod--cant">
                     <small>Cantidad</small>
                     <p>{quantity}</p>
