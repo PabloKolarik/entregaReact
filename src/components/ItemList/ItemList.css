@@ -1,8 +1,10 @@
 .ListGroup {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-items: center;
-  }
+  background-color: #433512;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-items: center;
+}

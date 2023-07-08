@@ -1,4 +1,4 @@
-.Controls{
+.Controls {
 
 color: #433512;
 display: flex;
@@ -7,13 +7,25 @@ justify-content: center;
 
 }
 
-.Number{
-    display: block;
+.Number {
+    display: flex;
     align-items: center;
     margin: 5px;
     padding: 5px;
 }
 
-.Button{
-    margin-left: 15;
+.Button {
+    margin: 20px;
+    padding: 10px;
+    color: #CA9A4E;
+    background-color: #433512;
+    border-radius: 50px;
+}
+
+.ButtonAg {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    padding: 4%;
+    border-radius: 50px;
 }

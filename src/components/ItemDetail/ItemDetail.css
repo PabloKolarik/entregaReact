@@ -3,8 +3,9 @@
 }
 
 .CardItem {
+
+  margin: 100px;
   border-radius: 5px;
-  height: 400px;
   padding: 20px;
   width: 300px;
 }
@@ -12,4 +13,29 @@
 .Info {
   color: #433512;
   font-family: "Spirax", cursive;
+}
+
+.Options {
+  display: flex;
+  padding: 10px;
+  font-family: 'Spirax', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+.OptionC {
+  margin: 10px;
+  color: #CA9A4E ;
+  background-color: #7D2A0C;
+  text-decoration-line: none;
+  border-radius: 5px;
+}
+
+.OptionT {
+  margin: 10px;
+  color: #433512 ;
+  background-color: #927D4E;
+  text-decoration-line: none;
+  border-radius: 5px;
 }

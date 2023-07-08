@@ -7,7 +7,7 @@ const Item = ({id, name, img, price, stock}) => {
         <article  className='CardItem'>
         <div className='container'>
             <div className='row'>
-                <div className='col-xxl-3 '>
+                
             <header className='Header'>
                 <h2 className='ItemHeader'>
                     {name}
@@ -28,7 +28,6 @@ const Item = ({id, name, img, price, stock}) => {
             <footer className='ItemFooter'>
                 <Link to={`/item/${id}`} className='Option'>Ver detalle</Link>
             </footer>
-            </div>
             </div>
         </div>
         </article>
