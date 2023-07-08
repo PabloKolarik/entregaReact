@@ -20,8 +20,8 @@ const ItemDetailContainer = () => {
         getDoc(docRef)
         .then(response => {
             const data = response.data()
-            const productAdapted = { id: response.id, ...data }
-            setProduct(productAdapted)
+            const productsAdapted = { id: response.id, ...data }
+            setProduct(productsAdapted)
         })
        
         .catch(error => {
@@ -32,9 +32,13 @@ const ItemDetailContainer = () => {
         })
     }, [itemId])
     return(
-        <div className='ItemDetailContainer'>
-            <ItemDetail {...product} />
-        </div>
+        <div className="itemDetailContainer">
+        {loading ? (
+          <p className="itemDetailContainer__p">Cargando producto...</p>
+        ) : (
+          <ItemDetail {...product} />
+        )}
+      </div>
     )
 }
 

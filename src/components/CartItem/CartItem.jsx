@@ -26,7 +26,7 @@ const CartItem = ({ id, title, price, quantity }) => {
                 <button
                     className="carrito__prod--eliminar"
                     onClick={() => removeItem(id)}
-                ></button>
+                >X</button>
             </div>
         </div>
     )

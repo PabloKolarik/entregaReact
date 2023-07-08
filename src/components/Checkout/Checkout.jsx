@@ -1,9 +1,16 @@
 import { useContext, useState } from 'react'
 import { db } from '../../services/firebase/firebaseConfig'
 import { CartContext } from '../../context/CartContext'
-import { Timestamp, query } from 'firebase/firestore'
+import { writeBatch } from "firebase/firestore"
 import CheckoutForm from '../CheckoutForm/CheckoutForm'
-
+import {
+    collection,
+    addDoc,
+    getDocs,
+    query,
+    where,
+    documentId,
+} from "firebase/firestore";
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false)
@@ -23,7 +30,7 @@ const Checkout = () => {
                 },
                 items: cart,
                 total: total,
-                date: Timestamp.fromDate(new Date())
+
             }
 
             const batch = writeBatch(db)
@@ -61,9 +68,9 @@ const Checkout = () => {
             if (outOfStock.length === 0) {
                 await batch.commit()
 
-                const ordersRef = collection(db, 'orders')
+                const orderRef = collection(db, 'orders')
 
-                const orderAdded = await addDoc(ordersRef, objOrder)
+                const orderAdded = await addDoc(orderRef, objOrder)
 
                 setOrderId(orderAdded.id)
                 clearCart()
@@ -78,9 +85,12 @@ const Checkout = () => {
     }
 
     if (loading) {
-        return (
-            <h1>Se esta generando su orden...</h1>
-        )
+        return <h1>Se esta generando su orden...</h1>
+
+    }
+
+    if (orderId) {
+        return <h1 className="checkout__h1">El Id de su compra es: {orderId}</h1>;
     }
 
     return (
