@@ -4,14 +4,18 @@ import './Item.css'
 const Item = ({id, name, img, price, stock}) => {
 
     return (
-        <article className='CardItem'>
+        <article  className='CardItem'>
+        <div className='container'>
+            <div className='row'>
+                <div className='col-xxl-3 '>
             <header className='Header'>
                 <h2 className='ItemHeader'>
                     {name}
                 </h2>
             </header>
+            
             <picture>
-                <img src={img} alt={name} className='ItemImg'/>
+                <img src={img} alt={name} className='ItemImg' />
             </picture>
             <section>
                 <p className='Info'>
@@ -24,6 +28,9 @@ const Item = ({id, name, img, price, stock}) => {
             <footer className='ItemFooter'>
                 <Link to={`/item/${id}`} className='Option'>Ver detalle</Link>
             </footer>
+            </div>
+            </div>
+        </div>
         </article>
     )
 }

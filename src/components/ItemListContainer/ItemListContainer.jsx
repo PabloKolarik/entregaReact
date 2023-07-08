@@ -44,7 +44,7 @@ const ItemListContainer = ({ greeting }) => {
         <p className="itemListContainer__p">Cargando producto...</p>
       ) : (
         <>
-          <h2 className="itemListContainer__h2">Panificados</h2>
+          <h2 className="itemListContainer__h2"></h2>
           <h4 className="itemListContainer__h4">{categoryId}</h4>
           <p className="itemListContainer__p">{greeting}</p>
           <div className="itemListContainer__div">
