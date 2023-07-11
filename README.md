@@ -2,13 +2,15 @@ Este es un proyecto creado con React para el curso de CODERHOUSE
 
 Debajo estan los detalles básicos para unicializar la aplicación. 
 
-La aplicación se puede visualizar en el siguiente Link
+La aplicación se puede visualizar en el siguiente Link https://github.com/PabloKolarik/entregaReact.git
+
 Instalación
 
 Despues de clonar el repositorio, ejecutar "npm install" para instalar las dependencias
+
 Ejecutar Proyecto
 
-1. Ejecute "npm start" en su proyecto para iniciar.
+1. Ejecute "npm run dev" en su proyecto para iniciar.
 2. No son necesarias credenciales para ejecutarlo.
 
 Tipo de aplicación
